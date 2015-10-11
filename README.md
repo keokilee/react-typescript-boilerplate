@@ -15,6 +15,7 @@ Installation
 * npm install
 * tsd install
 
-TODO:
+Todos
+-------------------------------------
 
-There's an open PR in DefinitelyTyped for ReactDOM that needs to be merged in (borisyankov/DefinitelyTyped#6228). You can edit the file manually (it's pretty small) after installing the definitions.
+There's an open PR in DefinitelyTyped for ReactDOM that needs to be merged in (https://github.com/borisyankov/DefinitelyTyped/pull/6228). You can edit the file manually (it's pretty small) after installing the definitions.
