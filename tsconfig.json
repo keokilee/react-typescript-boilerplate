@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "jsx": "react",
+    "noEmit": true
+  },
+  "files": [
+    "app/index.tsx",
+    "typings/tsd.d.ts"
+  ]
+}
