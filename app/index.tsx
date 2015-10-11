@@ -1,11 +1,18 @@
 /// <reference path="../typings/tsd.d.ts" />
-// React does not have any default exports.
-import * as React from 'react';
 
-class Home extends React.Component<any, any> {
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+
+class HelloProps {
+  public name:string;
+}
+
+class Hello extends React.Component<HelloProps, any> {
   render() {
     return (<div>
-      Hello world!
+      Hello {this.props.name}!
     </div>);
   }
 }
+
+ReactDOM.render(<Hello name="George" />, document.getElementById('app'));

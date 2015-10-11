@@ -7,6 +7,9 @@
   "installed": {
     "react/react.d.ts": {
       "commit": "3fc1377ce29dd9670975cb68615edf1b819fc4a5"
+    },
+    "react-dom/react-dom.d.ts": {
+      "commit": "3fc1377ce29dd9670975cb68615edf1b819fc4a5"
     }
   }
 }
