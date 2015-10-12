@@ -2,7 +2,6 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
-  context: __dirname,
   debug: true,
   devtool: 'eval',
   entry: ['webpack-hot-middleware/client', './app/index.tsx'],
@@ -10,12 +9,12 @@ module.exports = {
     loaders: [{
       test: /\.tsx?$/,
       loaders: ['babel', 'ts-loader'],
-      include: path.join(__dirname, 'app')
+      include: path.join(__dirname, '..', 'app')
     }]
   },
   output: {
     filename: 'app.js',
-    path: path.join(__dirname, 'build'),
+    path: path.join(__dirname, '..', 'build'),
     publicPath: '/static/'
   },
   plugins: [
@@ -23,7 +22,7 @@ module.exports = {
     new webpack.NoErrorsPlugin()
   ],
   resolve: {
-    root: [path.resolve('./app')],
+    root: [path.resolve('../app')],
     extensions: ['', '.jsx', '.js', '.tsx']
   }
 };
