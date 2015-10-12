@@ -8,14 +8,14 @@ module.exports = {
   entry: ['webpack-hot-middleware/client', './app/index.tsx'],
   module: {
     loaders: [{
-      test: /\.ts(x?)$/,
+      test: /\.tsx?$/,
       loaders: ['babel', 'ts-loader'],
-      include: path.join(__dirname, 'src')
+      include: path.join(__dirname, 'app')
     }]
   },
   output: {
     filename: 'app.js',
-    path: './build',
+    path: path.join(__dirname, 'build'),
     publicPath: '/static/'
   },
   plugins: [
