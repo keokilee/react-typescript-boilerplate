@@ -10,7 +10,7 @@ class HelloProps {
 class Hello extends React.Component<HelloProps, any> {
   render() {
     return (<div>
-      Hola {this.props.name}!
+      Hello {this.props.name}!
     </div>);
   }
 }
