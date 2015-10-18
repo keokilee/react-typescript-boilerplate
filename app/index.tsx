@@ -10,7 +10,7 @@ import { counterApp } from './reducers';
 
 const store: Store = createStore(counterApp);
 
-class Main extends React.Component<any, any> {
+class Main extends React.Component<{}, {}> {
   public render(): React.ReactElement<Provider> {
     return (<Provider store={store}>
       <App />

@@ -4,9 +4,9 @@
   "description": "Boilerplate project that uses Typescript, React, and Webpack",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf build",
     "build:webpack": "NODE_ENV=production webpack --config config/webpack.prod.js",
     "build": "npm run clean && npm run build:webpack",
+    "clean": "rimraf build",
     "start": "node dev_server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

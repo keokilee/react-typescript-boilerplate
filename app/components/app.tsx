@@ -7,7 +7,11 @@ import { connect } from 'react-redux';
 import { incrementCounter, decrementCounter } from '../actions';
 import { Counter } from './counter';
 
-function select(state: any): any {
+interface IAppState {
+  counters: number[];
+}
+
+function select(state: { counters: number[] }): IAppState {
   'use strict';
   return {
     counters: state.counters
@@ -15,8 +19,8 @@ function select(state: any): any {
 }
 
 @connect(select)
-export class App extends React.Component<any, any> {
-  public render(): React.ReactElement<any> {
+export class App extends React.Component<{}, {}> {
+  public render(): React.ReactElement<{}> {
     'use strict';
     const { dispatch, counters }: any = this.props;
 

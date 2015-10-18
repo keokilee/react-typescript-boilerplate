@@ -2,19 +2,19 @@
 'use strict';
 
 import { Reducer, combineReducers } from 'redux';
-import { CounterAction, INCREMENT_COUNTER, DECREMENT_COUNTER } from './actions';
+import { CounterAction, ACTION } from './actions';
 
 function counters(state: number[] = [0, 0, 0], action: CounterAction): number[] {
   'use strict';
 
   switch (action.type) {
-    case INCREMENT_COUNTER:
+    case ACTION.IncrementCounter:
       return [
         ...state.slice(0, action.counterId),
         state[action.counterId] + 2,
         ...state.slice(action.counterId + 1)
       ];
-    case DECREMENT_COUNTER:
+    case ACTION.DecrementCounter:
       return [
         ...state.slice(0, action.counterId),
         state[action.counterId] - 2,

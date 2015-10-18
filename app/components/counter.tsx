@@ -2,18 +2,20 @@
 
 import * as React from 'react';
 
-class CounterProps {
-  public index: number;
-  public value: number;
-  public onIncrement: () => void;
-  public onDecrement: () => void;
+interface ICounterProps {
+  index: number;
+  value: number;
+  onIncrement: () => void;
+  onDecrement: () => void;
 }
 
 const COLORS: string[] = ['blue', 'green', 'red'];
 
-export class Counter extends React.Component<CounterProps, any> {
-  public render(): any {
-    const style: any = { color: COLORS[this.props.index % COLORS.length] };
+export class Counter extends React.Component<ICounterProps, {}> {
+  public render(): React.ReactElement<{}> {
+    const style: {} = {
+      color: COLORS[this.props.index % COLORS.length]
+    };
 
     return (
       <div>
