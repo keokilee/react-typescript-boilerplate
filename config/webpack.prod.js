@@ -19,7 +19,7 @@ module.exports = {
     }]
   },
   output: {
-    path: path.join(__dirname, 'build'),
+    path: path.join(__dirname, '..', 'build'),
     filename: 'app.js',
     publicPath: '/static/'
   },
@@ -36,6 +36,10 @@ module.exports = {
       }
     })
   ],
+  resolve: {
+    root: [path.resolve('../app')],
+    extensions: ['', '.jsx', '.js', '.tsx', '.ts']
+  },
   tslint: {
     emitErrors: true,
     failOnHint: true
