@@ -17,11 +17,13 @@ export class Counter extends React.Component<ICounterProps, {}> {
       color: COLORS[this.props.index % COLORS.length]
     };
 
+    const {index, value, onIncrement, onDecrement}: any = this.props;
+
     return (
       <div>
-        <p style={style}>Counters {this.props.index + 1}: {this.props.value}</p>
-        <button onClick={this.props.onIncrement}>Increment</button>
-        <button onClick={this.props.onDecrement}>Decrement</button>
+        <p style={style}>Counters {index + 1}: {value}</p>
+        <button onClick={onIncrement}>Increment</button>
+        <button onClick={onDecrement}>Decrement</button>
       </div>
     );
   }
