@@ -1,9 +1,12 @@
 /// <reference path="../typings/tsd.d.ts" />
+'use strict';
 
-import { combineReducers } from 'redux';
-import { INCREMENT_COUNTER, DECREMENT_COUNTER } from './actions';
+import { Reducer, combineReducers } from 'redux';
+import { CounterAction, INCREMENT_COUNTER, DECREMENT_COUNTER } from './actions';
 
-function counters(state = [0, 0, 0], action) {
+function counters(state: number[] = [0, 0, 0], action: CounterAction): number[] {
+  'use strict';
+
   switch (action.type) {
     case INCREMENT_COUNTER:
       return [
@@ -22,4 +25,4 @@ function counters(state = [0, 0, 0], action) {
   }
 }
 
-export const counterApp = combineReducers({ counters });
+export const counterApp: Reducer = combineReducers({ counters });

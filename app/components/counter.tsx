@@ -9,12 +9,11 @@ class CounterProps {
   public onDecrement: () => void;
 }
 
-const COLORS = ['blue', 'green', 'red'];
+const COLORS: string[] = ['blue', 'green', 'red'];
 
 export class Counter extends React.Component<CounterProps, any> {
-
-  render() {
-    const style = { color: COLORS[this.props.index % COLORS.length] }
+  public render(): any {
+    const style: any = { color: COLORS[this.props.index % COLORS.length] };
 
     return (
       <div>
@@ -22,6 +21,6 @@ export class Counter extends React.Component<CounterProps, any> {
         <button onClick={this.props.onIncrement}>Increment</button>
         <button onClick={this.props.onDecrement}>Decrement</button>
       </div>
-    )
+    );
   }
 }

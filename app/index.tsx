@@ -2,20 +2,20 @@
 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { createStore } from 'redux';
+import { Store, createStore } from 'redux';
 import { Provider } from 'react-redux';
 
 import { App } from './components/app';
 import { counterApp } from './reducers';
 
-const store = createStore(counterApp);
+const store: Store = createStore(counterApp);
 
-class Hello extends React.Component<any, any> {
-  render() {
+class Main extends React.Component<any, any> {
+  public render(): React.ReactElement<Provider> {
     return (<Provider store={store}>
       <App />
     </Provider>);
   }
 }
 
-ReactDOM.render(<Hello name="George" />, document.getElementById('app'));
+ReactDOM.render(<Main />, document.getElementById('app'));
