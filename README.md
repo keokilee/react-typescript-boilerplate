@@ -5,9 +5,6 @@ Base project for setting up a frontend application using Typescript and React. H
 
 Prerequisites
 ----------------------------------
-
-* Webpack `npm install -g webpack`
-* Typescript `npm install -g typescript`
 * Typescript Definition Manager (TSD) `npm install -g tsd`
 
 Installation
