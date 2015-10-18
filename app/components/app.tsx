@@ -4,11 +4,16 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 
-import { incrementCounter, decrementCounter } from '../actions';
-import { Counter } from './counter';
+import { incrementCounter, decrementCounter, addCounter } from '../actions';
+import { CounterList } from './counter_list';
 
 interface IAppState {
   counters: number[];
+}
+
+interface IAppProps {
+  dispatch?: (func: any) => void;
+  counters?: number[];
 }
 
 function select(state: { counters: number[] }): IAppState {
@@ -19,22 +24,19 @@ function select(state: { counters: number[] }): IAppState {
 }
 
 @connect(select)
-export class App extends React.Component<{}, {}> {
+export class App extends React.Component<IAppProps, {}> {
   public render(): React.ReactElement<{}> {
     'use strict';
     const { dispatch, counters }: any = this.props;
 
-    return (<ul>
-      {counters.map((value: number, index: number) =>
-        <li key={index}>
-          <Counter
-            index={index}
-            onIncrement={() => dispatch(incrementCounter(index))}
-            onDecrement={() => dispatch(decrementCounter(index))}
-            value={counters[index]}
-          />
-        </li>
-      )}
-    </ul>);
+    return (<div>
+        <CounterList counters={counters}
+                     increment={(index: number) => dispatch(incrementCounter(index))}
+                     decrement={(index: number) => dispatch(decrementCounter(index))}
+        />
+
+        <button onClick={() => dispatch(addCounter())}>Add Counter</button>
+      </div>
+    );
   }
 }

@@ -1,19 +1,24 @@
 /// <reference path="../typings/tsd.d.ts" />
 'use strict';
 
-export enum ACTION { IncrementCounter, DecrementCounter }
+export enum ACTION { IncrementCounter, DecrementCounter, AddCounter }
 
-export class CounterAction {
-  public type: ACTION;
-  public counterId: number;
+export interface ICounterAction {
+  type: ACTION;
+  counterId?: number;
 }
 
-export function incrementCounter(counterId: number): CounterAction {
+export function incrementCounter(counterId: number): ICounterAction {
   'use strict';
   return { type: ACTION.IncrementCounter, counterId };
 }
 
-export function decrementCounter(counterId: number): CounterAction {
+export function decrementCounter(counterId: number): ICounterAction {
   'use strict';
   return { type: ACTION.DecrementCounter, counterId };
+}
+
+export function addCounter(): ICounterAction {
+  'use strict';
+  return { type: ACTION.AddCounter };
 }
