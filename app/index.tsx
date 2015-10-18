@@ -2,16 +2,19 @@
 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 
-class HelloProps {
-  public name:string;
-}
+import { App } from './components/app';
+import { counterApp } from './reducers';
 
-class Hello extends React.Component<HelloProps, any> {
+const store = createStore(counterApp);
+
+class Hello extends React.Component<any, any> {
   render() {
-    return (<div>
-      Hello {this.props.name}!
-    </div>);
+    return (<Provider store={store}>
+      <App />
+    </Provider>);
   }
 }
 
