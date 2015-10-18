@@ -2,10 +2,8 @@
   "compilerOptions": {
     "target": "ES6",
     "jsx": "preserve",
-    "noEmit": true
+    "noEmit": true,
+    "experimentalDecorators": true
   },
-  "files": [
-    "app/index.tsx",
-    "typings/tsd.d.ts"
-  ]
+  "exclude": ["node_modules", "config", "dev_server.js"]
 }
