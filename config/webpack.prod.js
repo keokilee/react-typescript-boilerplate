@@ -1,11 +1,25 @@
 var path = require('path');
 var webpack = require('webpack');
 
+var APP_DIR = path.join(__dirname, '..', 'app');
+
 module.exports = {
   devtool: 'source-map',
   entry: './app/index.tsx',
+  module: {
+    preLoaders: [{
+      test: /\.tsx?$/,
+      loader: 'tslint',
+      include: APP_DIR
+    }],
+    loaders: [{
+      test: /\.tsx?$/,
+      loaders: ['babel', 'ts-loader'],
+      include: APP_DIR
+    }]
+  },
   output: {
-    path: path.join(__dirname, 'build'),
+    path: path.join(__dirname, '..', 'build'),
     filename: 'app.js',
     publicPath: '/static/'
   },
@@ -22,11 +36,12 @@ module.exports = {
       }
     })
   ],
-  module: {
-    loaders: [{
-      test: /\.tsx?$/,
-      loaders: ['babel', 'ts-loader'],
-      include: path.join(__dirname, '..', 'app')
-    }]
+  resolve: {
+    root: [path.resolve('../app')],
+    extensions: ['', '.jsx', '.js', '.tsx', '.ts']
+  },
+  tslint: {
+    emitErrors: true,
+    failOnHint: true
   }
 }
