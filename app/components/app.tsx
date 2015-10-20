@@ -1,5 +1,4 @@
 /// <reference path="../../typings/tsd.d.ts" />
-'use strict';
 
 import * as React from 'react';
 import { connect } from 'react-redux';
@@ -17,7 +16,6 @@ interface IAppProps {
 }
 
 function select(state: { counters: number[] }): IAppState {
-  'use strict';
   return {
     counters: state.counters
   };
@@ -26,7 +24,6 @@ function select(state: { counters: number[] }): IAppState {
 @connect(select)
 export class App extends React.Component<IAppProps, {}> {
   public render(): React.ReactElement<{}> {
-    'use strict';
     const { dispatch, counters }: any = this.props;
 
     return (<div>
