@@ -8,7 +8,11 @@ import { Provider } from 'react-redux';
 import { App } from './components/app';
 import { counterApp } from './reducers';
 
-declare var module, require;
+interface IHotModule {
+  hot?: { accept: (path: string, callback: () => void) => void };
+};
+
+declare const module: IHotModule;
 
 function configureStore(): Store {
   const store: Store = createStore(counterApp);

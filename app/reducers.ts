@@ -8,7 +8,7 @@ function counters(state: number[] = [0, 0, 0], action: ICounterAction): number[]
     case ACTION.IncrementCounter:
       return [
         ...state.slice(0, action.counterId),
-        state[action.counterId] + 2,
+        state[action.counterId] + 1,
         ...state.slice(action.counterId + 1)
       ];
 
