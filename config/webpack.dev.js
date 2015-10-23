@@ -15,7 +15,7 @@ module.exports = {
     }],
     loaders: [{
       test: /\.tsx?$/,
-      loaders: ['babel', 'ts-loader'],
+      loaders: ['babel', 'awesome-typescript-loader'],
       include: APP_DIR
     }]
   },
