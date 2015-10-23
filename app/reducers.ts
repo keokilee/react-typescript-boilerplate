@@ -1,12 +1,9 @@
 /// <reference path="../typings/tsd.d.ts" />
-'use strict';
 
 import { Reducer, combineReducers } from 'redux';
 import { ICounterAction, ACTION } from './actions';
 
 function counters(state: number[] = [0, 0, 0], action: ICounterAction): number[] {
-  'use strict';
-
   switch (action.type) {
     case ACTION.IncrementCounter:
       return [
@@ -27,7 +24,6 @@ function counters(state: number[] = [0, 0, 0], action: ICounterAction): number[]
 
     default:
       return state;
-
   }
 }
 

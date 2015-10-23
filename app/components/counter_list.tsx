@@ -1,5 +1,4 @@
 /// <reference path="../../typings/tsd.d.ts" />
-'use strict';
 
 import * as React from 'react';
 
@@ -13,8 +12,6 @@ interface ICounterListProps {
 
 export class CounterList extends React.Component<ICounterListProps, {}> {
   public render(): React.ReactElement<{}> {
-    'use strict';
-
     return (<ul>
       {this.props.counters.map((value: number, index: number) =>
         <li key={index}>
