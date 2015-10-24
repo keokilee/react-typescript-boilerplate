@@ -15,7 +15,7 @@ module.exports = {
     }],
     loaders: [{
       test: /\.tsx?$/,
-      loaders: ['babel', 'ts-loader'],
+      loaders: ['babel', 'awesome-typescript-loader'],
       include: APP_DIR
     }]
   },
@@ -25,6 +25,7 @@ module.exports = {
     publicPath: '/static/'
   },
   plugins: [
+    new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ],
