@@ -16,9 +16,6 @@
     },
     "redux/redux.d.ts": {
       "commit": "af5b8275d1f2b92738b93fddabc461fc20c553a1"
-    },
-    "node/node.d.ts": {
-      "commit": "3191f6e0088eee07c4d8fd24e4d27a40a60d9eb9"
     }
   }
 }
