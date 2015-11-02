@@ -22,6 +22,7 @@
   "homepage": "https://github.com/keokilee/react-typescript-boilerplate",
   "devDependencies": {
     "awesome-typescript-loader": "^0.14.1",
+    "babel-core": "^5.0.0",
     "babel-loader": "^5.3.2",
     "babel-plugin-react-transform": "^1.1.1",
     "express": "^4.13.3",
