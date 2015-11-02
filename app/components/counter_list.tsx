@@ -12,14 +12,16 @@ interface ICounterListProps {
 
 export class CounterList extends React.Component<ICounterListProps, {}> {
   public render(): React.ReactElement<{}> {
+    const {increment, decrement}: any = this.props;
+
     return (<ul>
       {this.props.counters.map((value: number, index: number) =>
         <li key={index}>
           <Counter
             index={index}
-            onIncrement={() => this.props.increment(index)}
-            onDecrement={() => this.props.decrement(index)}
-            value={this.props.counters[index]}
+            onIncrement={() => increment(index)}
+            onDecrement={() => decrement(index)}
+            value={value}
           />
         </li>
       )}
