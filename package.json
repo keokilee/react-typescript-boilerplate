@@ -23,7 +23,7 @@
   "devDependencies": {
     "awesome-typescript-loader": "^0.14.1",
     "babel-loader": "^5.3.3",
-    "babel-core": "^5.0.0",
+    "babel-core": "^6.0.17",
     "babel-plugin-react-transform": "^1.1.1",
     "express": "^4.13.3",
     "react-transform-catch-errors": "^1.0.0",
