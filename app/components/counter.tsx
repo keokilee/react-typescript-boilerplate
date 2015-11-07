@@ -9,7 +9,7 @@ interface ICounterProps {
   onDecrement: () => void;
 }
 
-const COLORS: string[] = ['blue', 'green', 'red', 'orange'];
+const COLORS: string[] = ['blue', 'green', 'orange'];
 
 export class Counter extends React.Component<ICounterProps, {}> {
   public render(): React.ReactElement<{}> {
