@@ -5,20 +5,20 @@
   "path": "typings",
   "bundle": "typings/tsd.d.ts",
   "installed": {
-    "react/react.d.ts": {
-      "commit": "af5b8275d1f2b92738b93fddabc461fc20c553a1"
-    },
-    "react-dom/react-dom.d.ts": {
-      "commit": "af5b8275d1f2b92738b93fddabc461fc20c553a1"
-    },
     "react-redux/react-redux.d.ts": {
-      "commit": "af5b8275d1f2b92738b93fddabc461fc20c553a1"
+      "commit": "ba424f7ee39717d51c17699a09ac8df312a7e9a1"
+    },
+    "react/react-dom.d.ts": {
+      "commit": "ba424f7ee39717d51c17699a09ac8df312a7e9a1"
     },
     "redux/redux.d.ts": {
-      "commit": "af5b8275d1f2b92738b93fddabc461fc20c553a1"
+      "commit": "ba424f7ee39717d51c17699a09ac8df312a7e9a1"
+    },
+    "react/react.d.ts": {
+      "commit": "ba424f7ee39717d51c17699a09ac8df312a7e9a1"
     },
     "node/node.d.ts": {
-      "commit": "421d6610bdb09e1015b71f5991d7a68d079eca21"
+      "commit": "ba424f7ee39717d51c17699a09ac8df312a7e9a1"
     }
   }
 }
