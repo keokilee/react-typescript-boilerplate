@@ -30,7 +30,7 @@
     "redbox-react": "^1.2.0",
     "rimraf": "^2.4.4",
     "tslint": "^3.0.0",
-    "tslint-loader": "^2.0.0",
+    "tslint-loader": "^2.1.0",
     "webpack": "^1.12.9",
     "webpack-dev-middleware": "^1.4.0",
     "webpack-hot-middleware": "^2.5.0"
