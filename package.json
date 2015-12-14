@@ -41,6 +41,6 @@
     "react-redux": "^4.0.1",
     "redux": "^3.0.5",
     "ts-loader": "^0.7.2",
-    "typescript": "^1.7.3"
+    "typescript": "^1.7.5"
   }
 }
