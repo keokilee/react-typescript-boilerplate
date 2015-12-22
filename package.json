@@ -41,7 +41,7 @@
   "dependencies": {
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
-    "react-redux": "^4.0.2",
+    "react-redux": "^4.0.3",
     "redux": "^3.0.5",
     "ts-loader": "^0.7.2",
     "typescript": "^1.7.5"
