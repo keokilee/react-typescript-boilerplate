@@ -27,7 +27,7 @@
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
-    "express": "^4.13.3",
+    "express": "^4.13.4",
     "react-transform-catch-errors": "^1.0.1",
     "react-transform-hmr": "^1.0.1",
     "redbox-react": "^1.2.0",
