@@ -1,0 +1,11 @@
+{
+  "dependencies": {},
+  "devDependencies": {},
+  "ambientDependencies": {
+    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#1c56e368e17bb28ca57577250624ca5bd561aa81",
+    "react": "github:DefinitelyTyped/DefinitelyTyped/react/react.d.ts#69b3c5934bbed133b8e31b8fc7e9364daa33908a",
+    "react-dom": "github:DefinitelyTyped/DefinitelyTyped/react/react-dom.d.ts#ca5bfe76d2d9bf6852cbc712d9f3e0047c93486e",
+    "react-redux": "github:DefinitelyTyped/DefinitelyTyped/react-redux/react-redux.d.ts#a513c4df6eb8505da8eef432891c8b69b73535d9",
+    "redux": "github:DefinitelyTyped/DefinitelyTyped/redux/redux.d.ts#d4f3ed0cc7f7aba3b47dc6dbc68ead8a97052fe4"
+  }
+}

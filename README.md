@@ -5,12 +5,12 @@ Base project for setting up a frontend application using Typescript and React. H
 
 Prerequisites
 ----------------------------------
-* Typescript Definition Manager (TSD) `npm install -g tsd`
+* Typings `npm install -g typings`
 
 Installation
 --------------------------------------
 * npm install
-* tsd install
+* typings install
 
 Running the Dev Server
 --------------------------------------
