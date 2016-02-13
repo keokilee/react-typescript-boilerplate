@@ -8,6 +8,8 @@ import { Provider } from 'react-redux';
 import { App } from './components/app';
 import { counterApp } from './reducers';
 
+declare const require: (name: String) => any;
+
 interface IHotModule {
   hot?: { accept: (path: string, callback: () => void) => void };
 };
