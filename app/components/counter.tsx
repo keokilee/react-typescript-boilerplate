@@ -14,7 +14,7 @@ const COLORS: string[] = ['blue', 'green', 'red'];
 export class Counter extends React.Component<ICounterProps, {}> {
   public render(): React.ReactElement<{}> {
     const style: {} = {
-      color: COLORS[this.props.index % COLORS.length]
+      color: COLORS[this.props.index % COLORS.length],
     };
 
     const {index, value, onIncrement, onDecrement}: any = this.props;

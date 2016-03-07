@@ -17,7 +17,7 @@ interface IAppProps {
 
 function select(state: { counters: number[] }): IAppState {
   return {
-    counters: state.counters
+    counters: state.counters,
   };
 }
 
