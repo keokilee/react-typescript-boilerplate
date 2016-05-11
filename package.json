@@ -32,7 +32,7 @@
     "react-transform-hmr": "^1.0.2",
     "redbox-react": "^1.2.2",
     "rimraf": "^2.5.2",
-    "tslint": "^3.3.0",
+    "tslint": "^3.10.1",
     "tslint-loader": "^2.1.0",
     "webpack": "^1.12.15",
     "webpack-dev-middleware": "^1.5.1",
