@@ -39,7 +39,7 @@
     "webpack-hot-middleware": "^2.6.4"
   },
   "dependencies": {
-    "react": "^0.14.7",
+    "react": "^15.1.0",
     "react-dom": "^0.14.7",
     "react-redux": "^4.1.2",
     "redux": "^3.1.5",
