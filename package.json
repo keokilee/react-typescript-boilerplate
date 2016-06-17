@@ -30,7 +30,7 @@
     "express": "^4.13.4",
     "react-transform-catch-errors": "^1.0.2",
     "react-transform-hmr": "^1.0.2",
-    "redbox-react": "^1.2.2",
+    "redbox-react": "^1.2.7",
     "rimraf": "^2.5.2",
     "tslint": "^3.3.0",
     "tslint-loader": "^2.1.0",
